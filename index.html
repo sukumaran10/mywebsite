@@ -1,33 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
 
+    <title>Shree Hari Construction & Designs</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
+
 <body>
 
+    <!-- ================= NAVBAR ================= -->
+
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Learning Web Development</p>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Shree Hari Construction & Designs</span>
+
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
+    <!-- ================= HERO ================= -->
 
-        <p>
-            Hello! My name is Manoj.
-            I am learning HTML, CSS and JavaScript.
-        </p>
+    <section class="hero" id="home">
 
-        <button onclick="showMessage()">
-            Click Me
-        </button>
+        <div class="overlay">
+
+            <h1>
+
+                Building Your Dream with Engineering Excellence
+
+            </h1>
+
+            <p>
+
+                Professional Civil Engineering Solutions for Residential,
+                Commercial and Industrial Projects.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#services" class="btn">
+
+                    Explore Services
+
+                </a>
+
+                <a href="#contact" class="btn2">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <script src="script.js"></script>
+    <!-- ================= ABOUT ================= -->
 
+    <section id="about" class="about">
+
+        <h2>About Us</h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h3>Who We Are</h3>
+
+                <p>
+
+                    Shree Hari Construction & Designs provides professional
+                    architectural planning, structural design and construction
+                    consulting services.
+
+                </p>
+
+                <p>
+
+                    We specialize in creating innovative, economical and
+                    sustainable engineering solutions using modern software
+                    and engineering standards.
+
+                </p>
+
+                <ul>
+
+                    <li>✔ 2D Floor Plans</li>
+
+                    <li>✔ 3D Elevation Design</li>
+
+                    <li>✔ Structural Design</li>
+
+                    <li>✔ Building Estimation</li>
+
+                    <li>✔ Municipality Approval Drawings</li>
+
+                    <li>✔ Interior Design</li>
+
+                </ul>
+
+            </div>
+
+            <div class="about-image">
+
+                <img src="images/about.jpg" alt="About">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+
+            <div class="card">
+
+                <i class="fa-solid fa-pencil-ruler"></i>
+
+                <h3>2D Design</h3>
+
+                <p>
+
+                    Floor Plans, Elevation, Sections,
+                    Working Drawings.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-cube"></i>
+
+                <h3>3D Design</h3>
+
+                <p>
+
+                    Exterior & Interior Visualization
+                    with Modern Rendering.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-helmet-safety"></i>
+
+                <h3>Structural Design</h3>
+
+                <p>
+
+                    RCC Design,
+                    Beam,
+                    Slab,
+                    Footing &
+                    Column Design.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                <h3>Estimation</h3>
+
+                <p>
+
+                    Quantity Survey,
+                    BOQ,
+                    Material &
+                    Cost Estimation.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-signature"></i>
+
+                <h3>Approval Drawings</h3>
+
+                <p>
+
+                    DTCP,
+                    Municipality &
+                    Panchayat Plans.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-couch"></i>
+
+                <h3>Interior Design</h3>
+
+                <p>
+
+                    Modular Kitchen,
+                    Living Room,
+                    Bedroom &
+                    Office Design.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+
+        <h2>Recent Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <img src="images/project1.jpg">
+
+                <h3>Modern Villa</h3>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="images/project2.jpg">
+
+                <h3>Residential House</h3>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="images/project3.jpg">
+
+                <h3>Commercial Building</h3>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="images/project4.jpg">
+
+                <h3>Industrial Shed</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COUNTERS ================= -->
+
+    <section class="counter">
+
+        <div>
+
+            <h1 class="count" data-target="150">0</h1>
+
+            <p>Projects Completed</p>
+
+        </div>
+
+        <div>
+
+            <h1 class="count" data-target="100">0</h1>
+
+            <p>Happy Clients</p>
+
+        </div>
+
+        <div>
+
+            <h1 class="count" data-target="5">0</h1>
+
+            <p>Years Experience</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+
+            <div class="contact-info">
+
+                <h3>Shree Hari Construction & Designs</h3>
+
+                <p>
+
+                    <strong>Service Provider :</strong>
+
+                    Shree Hari K
+
+                </p>
+
+                <p>
+
+                    <strong>Phone :</strong>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <strong>Email :</strong>
+
+                    shreeharidesigns2026@gmail.com
+
+                </p>
+
+                <p>
+
+                    <strong>Working Hours :</strong>
+
+                    Monday - Saturday
+
+                    <br>
+
+                    9 AM - 6 PM
+
+                </p>
+
+            </div>
+
+            <form action="https://formsubmit.co/sukumar.g.rjpm@gmail.com" method="POST">
+
+                <!-- Hidden Fields -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_subject"
+                    value="New Enquiry - Shree Hari Construction & Designs">
+
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Remove this line until you create a thankyou.html page -->
+               
+                <input type="hidden" name="_next"
+                    value="http://127.0.0.1:5500/thankyou.html">
+
+                
+
+                <!-- User Details -->
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email"
+                    required>
+
+                <input
+                    type="tel"
+                    name="Phone"
+                    placeholder="Phone Number"
+                    required>
+
+                <select name="Service" required>
+
+                    <option value="">Select Service</option>
+
+                    <option>2D Design</option>
+                    <option>3D Design</option>
+                    <option>Structural Design</option>
+                    <option>Estimation</option>
+                    <option>Approval Drawings</option>
+
+                </select>
+
+                <textarea
+                    name="Project Details"
+                    rows="5"
+                    placeholder="Project Details"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Enquiry
+                </button>
+                <a
+                href="https://wa.me/7603953005?text=Hello%20Shree%20Hari%20Construction%20%26%20Designs.%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                class="chat-btn"
+                target="_blank"
+                aria-label="Chat with us on WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <span>Chat on WhatsApp</span>
+
+                </a>
+            </form>
+
+        </div>
+
+    </section>
+
+        
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Shree Hari Construction & Designs
+
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+<script src="script.js"></script>
 </body>
+
 </html>

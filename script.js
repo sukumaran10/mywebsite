@@ -254,13 +254,37 @@ window.addEventListener("scroll", () => {
 
 });
 
-const menu=document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu-toggle");
+const menuIcon = document.querySelector(".menu-toggle i");
+const nav = document.querySelector("nav");
 
-const nav=document.querySelector("nav");
+menu.addEventListener("click", () => {
 
-menu.addEventListener("click",()=>{
+    nav.classList.toggle("active");
 
-nav.classList.toggle("active");
+    if (nav.classList.contains("active")) {
+
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+
+    } else {
+
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+
+    }
+
+});
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("active");
+
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+
+    });
 
 });
 

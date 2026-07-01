@@ -254,34 +254,35 @@ window.addEventListener("scroll", () => {
 
 });
 
-const menu = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle");
 const menuIcon = document.querySelector(".menu-toggle i");
-const nav = document.querySelector("nav");
+const mobileMenu = document.querySelector("#mobileMenu");
 
-menu.addEventListener("click", () => {
+menuToggle.addEventListener("click",()=>{
 
-    nav.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
-    if (nav.classList.contains("active")) {
+    if(mobileMenu.classList.contains("active")){
 
         menuIcon.classList.remove("fa-bars");
-        menuIcon.classList.add("fa-times");
+        menuIcon.classList.add("fa-xmark");
 
-    } else {
+    }else{
 
-        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
 
     }
 
 });
-document.querySelectorAll("nav a").forEach(link => {
 
-    link.addEventListener("click", () => {
+document.querySelectorAll("#mobileMenu a").forEach(link=>{
 
-        nav.classList.remove("active");
+    link.addEventListener("click",()=>{
 
-        menuIcon.classList.remove("fa-times");
+        mobileMenu.classList.remove("active");
+
+        menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
 
     });

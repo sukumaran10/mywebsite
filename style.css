@@ -1482,11 +1482,15 @@ header{
 
     display:block;
 
-    font-size:34px;
+    font-size:32px;
+
+    color:#005792;
 
     cursor:pointer;
 
-    color:#005792;
+    z-index:1001;
+
+    position:relative;
 
 }
 
